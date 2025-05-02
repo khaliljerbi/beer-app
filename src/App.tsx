@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
+import ScrollToTop from "./components/scroll-to-top";
 import BeerCartPage from "./pages/beer-cart-page";
 import BeerDetailPage from "./pages/beer-details-page";
 import BeerListPage from "./pages/beer-list-page";
@@ -27,6 +28,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <AppLayout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<BeerListPage />} />
           <Route path="/beer/:id" element={<BeerDetailPage />} />

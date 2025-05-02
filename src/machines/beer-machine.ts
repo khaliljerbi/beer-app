@@ -1,6 +1,6 @@
 import { getErrorMessage } from "@/helpers";
 import { assign, fromPromise, setup } from "xstate";
-import { getBeerById, getBeers } from "../services/beerApi";
+import { getBeerById, getBeers } from "../services/beer-api";
 import { Beer } from "../types/beer";
 
 const fetchBeersActor = fromPromise(
